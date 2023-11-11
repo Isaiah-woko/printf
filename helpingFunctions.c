@@ -14,10 +14,10 @@ void _putchar(char c)
 * @num: The number
 * Return: the digit length
 */
-int _numlen(unsigned int num)
+int _numlen(long int num)
 {
 	int count = 1;
-	int numcp;
+	long int numcp;
 
 	numcp = num;
 	if (numcp < 0)
@@ -33,7 +33,7 @@ int _numlen(unsigned int num)
 * @power: the power
 * Return: pow(num, power)
 */
-int _pow(unsigned int num, int power)
+int _pow(int num, int power)
 {
 	unsigned int result = num;
 

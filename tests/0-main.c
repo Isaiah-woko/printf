@@ -10,12 +10,12 @@
 int main(void)
 {
 	int len;
-	int test_values[] = {0, 1, -1, 42, 127, -128, 256, INT_MAX, INT_MIN};
+	/*int test_values[] = {0, 1, -1, 42, 127, -128, 256, INT_MAX, INT_MIN};*/
 	int len2;
-	long unsigned int i;
+	/*long unsigned int i;*/
 
-	len = _printf("Let's try to printf a simple sentence.%d\n", -76253429183091284);
-	len2 = printf("Let's try to printf a simple sentence.%d\n", -76253429183091284);
+	len = _printf("Let's try to printf a simple sentence.%d\n", -762534);
+	len2 = printf("Let's try to printf a simple sentence.%d\n", -762534);
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
 	_printf("Negative:[%d]\n", -762534);
@@ -35,7 +35,6 @@ int main(void)
 
 	_printf("Binary:[%b]\n", 100121);
 	printf("Binary:[%b]\n", 100121);
-	
 	/**
 	* for (i = 0; i < sizeof(test_values) / sizeof(test_values[0]); i++)
 	* {
