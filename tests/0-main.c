@@ -31,10 +31,11 @@ int main(void)
 	printf("hex:[%d]\n", 0xA2);
 	_printf("Binary:[%b]\n", 100121);
 	printf("Binary:[%b]\n", 100121);
-    _printf("Binary:[%b]\n", 100121000);
-	printf("Binary:[%b]\n", 100121000);
-    _printf("Binary:[%b]\n", 98);
-	printf("Binary:[%b]\n", 98);
+    len= _printf("Binary:[%b]\n", 0);
+	len= printf("Binary:[%b]\n", 0);
+	printf("Binary len:[%b]\n", len);
+    _printf("Binary len:[%b]\n", len);
+	/*printf("Binary:[%b]\n", -989999);*/
     /* '+' flag handling */
     /*_printf("flag '+':[%+d]\n", 98);*/
 	printf("flag '+':[%++++d]\n", 98);
