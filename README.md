@@ -17,4 +17,4 @@ This repo would contain the codes for creating a custom printf function and it w
 
 
 ## Run Commands
-    $ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format  helpingFunctions.c print_chr.c print_int.c specifier_handler.c _printf.c 0-main.c -o 0-main && ./0-main
+    $ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format tests/0-main.c *.c && ./a.out

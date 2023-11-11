@@ -6,18 +6,20 @@
  */
 int print_int(va_list args)
 {
-	int len = 1, num, check, digit, sign = 0;
+	int len = 1, tempnum, check, digit, sign = 0;
+	unsigned int num;
+
 	/*Read the number*/
-	num = va_arg(args, int);
+	tempnum = va_arg(args, int);
 	/*if number is neg print the symbol '-'*/
-	if (num < 0)
+	if (tempnum < 0)
 	{
 		_putchar('-');
-		num = num * -1;
+		tempnum = tempnum * -1;
 		sign = 1;
 	}
 	/*count the number length*/
-
+	num = tempnum;
 	len = _numlen(num);
 	check = _pow(10, len);
 	while (check /= 10)
