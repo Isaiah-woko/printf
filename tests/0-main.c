@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* Description: test 'd' , 'i' ,'c'
+* Description: test 'd' , 'i' ,'c', 'c'
 * Return: Always 0
 */
 int main(void)
@@ -30,18 +30,23 @@ int main(void)
 	printf("octal:[%d]\n", 052);
 	_printf("hex:[%d]\n", 0xA2);
 	printf("hex:[%d]\n", 0xA2);
+	 _printf("String:[%s]\n", "I am a string !");
+	 printf("String:[%s]\n", "I am a string !");
 
 	_printf("Binary:[%b]\n", 100121);
 	printf("Binary:[%b]\n", 100121);
-	for (i = 0; i < sizeof(test_values) / sizeof(test_values[0]); i++)
-	{
-		int value = test_values[i];
-
-		printf("%i - Decimal: %d\n", i, value);//, Binary: %b\n", value, value);
-		_printf("%i - Decimal: %d\n", i, value);//, Binary: %b\n", value, value);
-		//printf("Decimal: %d\n");//, Binary: %b\n", value, value);
-
-	}
+	
+	/**
+	* for (i = 0; i < sizeof(test_values) / sizeof(test_values[0]); i++)
+	* {
+	*	int value = test_values[i];
+	*
+	*	printf("%i - Decimal: %d\n", i, value); , Binary: %b\n", value, value);
+	*	_printf("%i - Decimal: %d\n", i, value); , Binary: %b\n", value, value);
+	*	printf("Decimal: %d\n");, Binary: %b\n", value, value);
+	*
+	* }
+	*/
 	/* '+' flag handling */
     /*_printf("flag '+':[%+d]\n", 98);*/
 	printf("flag '+':[%++++d]\n", 98);
