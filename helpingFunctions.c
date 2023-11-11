@@ -35,7 +35,7 @@ int _numlen(int num)
 */
 int _pow(int num, int power)
 {
-	int result = num;
+	unsigned int result = num;
 
 	while (--power)
 	{
