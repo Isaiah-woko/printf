@@ -35,6 +35,13 @@ int main(void)
 	 _printf("String:[%s]\n", "I am a string !");
 	 printf("String:[%s]\n", "I am a string !");
 
+	 printf("%%\n");
+	 _printf("%%\n");
+	 printf("%\0\n");
+	 _printf("%\0\n");
+	 printf("% \n");
+	 _printf("% \n");
+
 	_printf("Binary:[%b]\n", 100121);
 	printf("Binary:[%b]\n", 100121);
 	/**
