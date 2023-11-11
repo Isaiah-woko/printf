@@ -10,9 +10,9 @@
 int main(void)
 {
 	int len;
-	int test_values[] = {0, 1, -1, 42, 127, -128, 256, INT_MAX, INT_MIN};
+	/*int test_values[] = {0, 1, -1, 42, 127, -128, 256, INT_MAX, INT_MIN};*/
 	int len2;
-	long unsigned int i;
+	/*long unsigned int i;*/
 
 	len = _printf("Let's try to printf a simple sentence.%d\n", -76253429183091284);
 	len2 = printf("Let's try to printf a simple sentence.%d\n", -76253429183091284);
