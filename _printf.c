@@ -7,12 +7,10 @@
 int _printf(const char *format, ...)
 {
 	int i;
-
 	va_list args;
 	int numberofchar = 0;
 
 	va_start(args, format);
-
 	/* check if format not null and we don't reach the end of the string*/
     /* format && format[i]*/
 	for (i = 0; format && format[i] != '\0'; i++)
