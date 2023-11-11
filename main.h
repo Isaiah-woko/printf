@@ -21,7 +21,7 @@ int print_binary(va_list args);
 /*Helping Function*/
 void _putchar(char c);
 
-int _numlen(long int num);
+int _numlen(int num);
 
 int _pow(int num, int power);
 

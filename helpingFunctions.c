@@ -14,15 +14,13 @@ void _putchar(char c)
 * @num: The number
 * Return: the digit length
 */
-int _numlen(long int num)
+int _numlen(int num)
 {
 	int count = 1;
-	long int numcp;
 
-	numcp = num;
-	if (numcp < 0)
-		numcp *= -1;
-	while (numcp /= 10)
+	if (num < 0)
+		num *= -1;
+	while (num /= 10)
 		count++;
 	return (count);
 }
