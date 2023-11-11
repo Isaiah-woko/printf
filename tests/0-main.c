@@ -24,6 +24,8 @@ int main(void)
 	printf("Negative:[%i]\n", -76253429183091284);
 	_printf("Negative:[%i]\n", 76253429183091284);
 	printf("Negative:[%i]\n", 76253429183091284);
+	len = _printf("Percent:[%%]\n");
+	len2 = printf("Percent:[%%]\n");
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
 	_printf("octal:[%d]\n", 052);
