@@ -11,7 +11,7 @@ int print_int(va_list args)
 	long int tempnum;
 
 	/*Read the number*/
-	tempnum = va_arg(args, long int);
+	tempnum = va_arg(args, int);
 	/*if number is neg print the symbol '-'*/
 	if (tempnum < 0)
 	{
