@@ -37,9 +37,7 @@ int main(void)
 
 	 printf("%%\n");
 	 _printf("%%\n");
-	 printf("%\0\n");
 	 _printf("%\0\n");
-	 printf("% \n");
 	 _printf("% \n");
 
 	_printf("Binary:[%b]\n", 100121);

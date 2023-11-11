@@ -32,8 +32,9 @@ int _printf(const char *format, ...)
 		{
 			i++;
 
-			if (format[i] == ' ' || '\0')
+			if (format[i] == ' ' || format[i] == '\0')
 			{
+				va_end(args);
 				return (-1);
 			}
 			else if (format[i] == '%')
@@ -49,4 +50,3 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (numberofchar);
 }
-
