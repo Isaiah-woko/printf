@@ -15,11 +15,12 @@ int print_int(va_list args)
 	if (tempnum < 0)
 	{
 		_putchar('-');
-		tempnum = tempnum * -1;
+		num = tempnum * -1;
 		sign = 1;
 	}
+	else
+		num = tempnum;
 	/*count the number length*/
-	num = tempnum;
 	len = _numlen(num);
 	check = _pow(10, len);
 	while (check /= 10)

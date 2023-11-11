@@ -7,7 +7,7 @@
 */
 int print_binary(va_list args)
 {
-	int value;
+	unsigned int value;
 	int count = 0, size, j;
 
 	value = va_arg(args, int);
