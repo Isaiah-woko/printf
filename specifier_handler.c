@@ -21,6 +21,9 @@ int specifier_handler(char specifier, const char *format, int *i, va_list args)
 		case 'i':
 			count = print_int(args);
 			return (count);
+		case 'b':
+			count = print_binary(args);
+			return (count);
 		default:
 			_putchar('%');
 			_putchar(format[*i]);

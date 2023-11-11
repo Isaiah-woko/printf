@@ -16,6 +16,7 @@ int specifier_handler(char specifier, const char *format, int *i,
 /*specifiers*/
 int print_chr(va_list args);
 int print_int(va_list args);
+int print_binary(va_list args);
 /*Helping Function*/
 void _putchar(char c);
 
