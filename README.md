@@ -18,4 +18,4 @@ This repo would contain the codes for creating a custom printf function and it w
 
 
 ## Run Commands
-    $ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format tests/0-main.c *.c && ./a.out
+     gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format tests/0-main.c *.c && ./a.out
