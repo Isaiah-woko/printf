@@ -31,6 +31,9 @@ int specifier_handler(char specifier, va_list args, char buffer[],
 		case 'u':
 			count = print_unsigned_int(args, buffer_index, buffer);
 			return (count);
+		case 'o':
+			count = print_unsigned_octal(args, buffer_index, buffer);
+			return (count);
 		default:
 			buffer_insert('%', buffer_index, buffer);
 			buffer_insert(specifier, buffer_index, buffer);
