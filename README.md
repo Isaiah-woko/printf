@@ -12,6 +12,8 @@ This repo would contain the codes for creating a custom printf function and it w
 |helpingFunctions.c|Helping function for digit and string manipluation|
 |print_chr.c|print a character '%c' |
 |print_int.c|print a integer '%d' or '%i'|
+|print_str.c|prints a string '%s' |
+|print_percent|prints the percentage symbol '%' |
 |print_binary.c|print the integer number in binary '%b'|
 |0-main.c | main function to test 'd' , 'i' , 'c' and normal string in format variable|
 |main.c |The Alx main.c to test all specifier formats| 
