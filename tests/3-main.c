@@ -28,5 +28,10 @@ int main(void)
 	 _printf("Unsigned:[%u]\n", ui);
 	 printf("Unsigned:[%u]\n", ui);
 
+
+	 /* test case for %u*/
+	 _printf("Unsigned octal:[%o]\n", ui);
+	  printf("Unsigned octal:[%o]\n", ui);
+
 	 return (0);
 }
