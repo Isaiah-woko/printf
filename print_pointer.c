@@ -6,10 +6,3 @@
  * @buffer: the buffer
  * Return: number of character printed
  */
-int print_pointer(va_list args, int *buffer_index, char buffer[])
-{
-    int count = 0;
-    
-
-    return (count);
-}
