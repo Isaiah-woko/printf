@@ -43,35 +43,35 @@ int main(void)
 	_printf("%d - %d = %d\n",1024, 2048, (2048 - 1024));
 	printf("%d - %d = %d\n",1024, 2048, (2048 - 1024));
 	/***/
-	_printf("%i\n", INT_MIN);
+	/*_printf("%i\n", INT_MIN);
 	printf("%i\n", INT_MIN);
 	_printf("%i\n", INT_MAX);
-	printf("%i\n", INT_MAX);
-	/***/
-	_printf("%d\n", INT_MIN);
+	printf("%i\n", INT_MAX);*/
+	/*  */
+	/* _printf("%d\n", INT_MIN);
 	printf("%d\n", INT_MIN);
 	_printf("%d\n", INT_MAX);
-	printf("%d\n", INT_MAX);
-	/***/
+	printf("%d\n", INT_MAX);*/
+	/* */
 	_printf("%i\n", 10000);
 	printf("%i\n", 10000);
 	_printf("%d\n", 10000);
 	printf("%d\n", 10000);
-	/***/
-	_printf("%i\n", INT_MAX + 1024);
+	/* */
+	/* _printf("%i\n", INT_MAX + 1024);
 	printf("%i\n", INT_MAX + 1024);
 	_printf("%i\n", INT_MIN - 1024);
 	printf("%i\n", INT_MIN - 1024);
 	_printf("%d\n", INT_MIN + 1024);
 	printf("%d\n", INT_MIN + 1024);
 	_printf("%d\n", INT_MAX - 1024);
-	printf("%d\n", INT_MAX - 1024);
-	/***/
+	printf("%d\n", INT_MAX - 1024);*/
+	/* */
 	_printf("%iddi%diddiiddi\n",1024);
 	printf("%iddi%diddiiddi\n", 1024);
-	/***/
-	_printf("%i + %i = %i\n",INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
-	printf("%i + %i = %i\n",INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
+	/* */
+	/*_printf("%i + %i = %i\n",INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
+	printf("%i + %i = %i\n",INT_MIN, INT_MAX, (INT_MIN + INT_MAX));*/
 	/***/
 	_printf("%d == %i\n", 1024, 1024);
 	printf("%d == %i\n", 1024, 1024);
@@ -85,8 +85,5 @@ int main(void)
 	 _printf("%\0\n");
 	 _printf("% \n");
 
-	_printf("Binary:[%b]\n", 100121);
-	printf("Binary:[%b]\n", 100121);
-    
 	return (0);
 }
