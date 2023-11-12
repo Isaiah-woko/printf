@@ -13,7 +13,7 @@ This repo would contain the codes for creating a custom printf function and it w
 |print_chr.c|print a character '%c' |
 |print_int.c|print a integer '%d' or '%i'|
 |print_str.c|prints a string '%s' |
-|print_percent|prints the percentage symbol '%' |
+|print_percent.c|prints the percentage symbol '%' |
 |print_binary.c|print the integer number in binary '%b'|
 |print_pointer.c|print the value of a pointer '%p'|
 
