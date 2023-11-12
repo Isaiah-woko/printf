@@ -13,9 +13,14 @@ This repo would contain the codes for creating a custom printf function and it w
 |print_chr.c|print a character '%c' |
 |print_int.c|print a integer '%d' or '%i'|
 |print_binary.c|print the integer number in binary '%b'|
-|1-main.c | main function to test 'd' , 'i' and normal string in format variable|
-|main.c |The Alx main.c to test all specifier formats| 
+|tests/0-main.c | test cases for task 0 's','c','%'|
+|tests/1-main.c | test cases for task 1 'd', 'i'|
+|tests/2-main.c | test cases for task 2 'b'|
+|tests/3-main.c | test cases for task 3|
+|tests/4-main.c | test cases for task 4 . buffer[1024]|
+
 
 
 ## Run Commands
+To check different test cases use the right test/{}-main.c file
      gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format tests/0-main.c *.c && ./a.out

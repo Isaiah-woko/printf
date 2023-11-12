@@ -2,34 +2,35 @@
 /**
 * specifier_handler - the switch case to chose the right specifier
 * @specifier: the specifier character 'c', 'd' , ...
-* @format: the format array
-* @i: the index of format
 * @args: the argument passed
+* @buffer: the buffer
+* @buffer_index: the buffer index
 * Return: Number of character printed
 */
 
-int specifier_handler(char specifier, const char *format, int *i, va_list args)
+int specifier_handler(char specifier, va_list args, char buffer[],
+		int *buffer_index)
 {
 	int count = 0;
 
 	switch (specifier)
 	{
 		case 'c':
-			count = print_chr(args);
+			count = print_chr(args, buffer_index, buffer);
 			return (count);
 		case 'd':
 		case 'i':
-			count = print_int(args);
+			count = print_int(args, buffer_index, buffer);
 			return (count);
 		case 's':
-			count = print_str(args);
+			count = print_str(args, buffer_index, buffer);
 			return (count);
 		case 'b':
-			count = print_binary(args);
+			count = print_binary(args, buffer_index, buffer);
 			return (count);
 		default:
-			_putchar('%');
-			_putchar(format[*i]);
+			buffer_insert('%', buffer_index, buffer);
+			buffer_insert(specifier, buffer_index, buffer);
 			count += 2;
 			return (count);
 	}
