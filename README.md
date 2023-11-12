@@ -17,6 +17,7 @@ This repo would contain the codes for creating a custom printf function and it w
 |print_binary.c|print the integer number in binary '%b'|
 |print_pointer.c|print the value of a pointer '%p'|
 |print_unsigned_int.c|prints an unsigned integer '%u' |
+|print_unsigned_octal.c|prints an unsigned octal '%o' |
 
 
 ## 📂 Files : tests
