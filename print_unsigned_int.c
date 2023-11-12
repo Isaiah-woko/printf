@@ -22,8 +22,8 @@ int print_unsigned_int(va_list args, int *buffer_index, char buffer[])
 	highest = _pow(10, len - 1);
 	while (highest > 0)
 	{
-		digit = (num / highest) % 10;
-		buffer_insert(digit + '0', buffer_index, buffer);
+		digits = (num / highest) % 10;
+		buffer_insert(digits + '0', buffer_index, buffer);
 		highest /= 10;
 	}
 
