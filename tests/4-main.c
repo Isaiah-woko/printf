@@ -18,6 +18,11 @@ int main(void)
 	_printf("% \n");
 	_printf("String:[%s]\n", "I am a string !");
 	printf("String:[%s]\n", "I am a string !");
+	_printf("Complete the sentence: You %s nothing, Jon Snow. \n","know");
+	printf("Complete the sentence: You %s nothing, Jon Snow. \n","know");
+	_printf("Complete the sentence: You %s nothing, Jon Snow. \n",(char *)0);
+	printf("Complete the sentence: You %s nothing, Jon Snow. \n",(char *)0);
+	
      _printf("%b\n", 98);
     printf("%b\n", 98);
     _printf("%b\n", 0);
