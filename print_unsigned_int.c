@@ -11,10 +11,21 @@
 
 int print_unsigned_int(va_list args, int *buffer_index, char buffer[])
 {
-	int len = 1, digits;
+	int len = 1, digits, i;
 	unsigned int num, highest;
 
 	num = va_arg(args, unsigned int);
+
+	if (num == UINT_MAX)
+	{
+		char Max[] = "4294967295";
+
+		for (i = 0; i < 10; i++)
+		{
+			buffer_insert(Max[i], buffer_index, buffer);
+		}
+		return (10);
+	}
 
 	/*count length of number*/
 	len = _numlen(num);

@@ -20,7 +20,7 @@ int main(void)
 	_printf("Unsigned:[%u]\n", ui);
 	printf("Unsigned:[%u]\n", ui);
 
-	ui = 4294967295; /* Maximum value for an unsigned int*/
+	ui = UINT_MAX; /* Maximum value for an unsigned int*/
 	_printf("Unsigned:[%u]\n", ui);
 	printf("Unsigned:[%u]\n", ui);
 
