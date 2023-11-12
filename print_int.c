@@ -6,7 +6,7 @@
 */
 int print_int(va_list args)
 {
-	int len = 1, check, digit, sign = 0, i;
+	int len = 1, sign = 0, i;
 	long int tempnum, num;
 	char *str;
 
