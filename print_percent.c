@@ -5,7 +5,7 @@
  * Return: 1
  */
 
-int handle_percent()
+int handle_percent(void)
 {
 	_putchar('%');
 

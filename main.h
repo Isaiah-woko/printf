@@ -8,6 +8,7 @@
 
 /* main files */
 int _printf(const char *format, ...);
+int format_string(const char *format, va_list args);
 
 int specifier_handler(char specifier, const char *format, int *i,
 
@@ -17,7 +18,7 @@ int specifier_handler(char specifier, const char *format, int *i,
 int print_chr(va_list args);
 int print_int(va_list args);
 int print_str(va_list args);
-int handle_percent();
+int handle_percent(void);
 int print_binary(va_list args);
 /*Helping Function*/
 void _putchar(char c);
