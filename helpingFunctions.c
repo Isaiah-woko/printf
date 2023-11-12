@@ -24,3 +24,22 @@ int _numlen(int num)
 		count++;
 	return (count);
 }
+
+/**
+* _pow - (`num` to the power `power`)
+* @num: the number
+* @power: the power
+* Return: pow(num, power)
+*/
+long int _pow(int num, int power)
+{
+	long int result = 1;
+
+	while (power > 0)
+	{
+		result *= num;
+		power--;
+	}
+
+	return (result);
+}
