@@ -20,6 +20,7 @@ int print_int(va_list args, int *buffer_index, char buffer[]);
 int print_str(va_list args, int *buffer_index, char buffer[]);
 int handle_percent(int *buffer_index, char buffer[]);
 int print_binary(va_list args, int *buffer_index, char buffer[]);
+int print_pointer(va_list args, int *buffer_index, char buffer[]);
 /*Helping Function*/
 void _putchar(char c);
 int _numlen(int num);
