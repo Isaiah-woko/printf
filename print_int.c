@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * print_int - print the digit the specifier %d or %i
- * @args: the argument passed
- * Return: number of digit printed
- */
+* print_int - print the digit the specifier %d or %i
+* @args: the argument passed
+* Return: number of digit printed
+*/
 int print_int(va_list args)
 {
-	int len = 1, check, digit, sign = 0;
-	long int num;
-	long int tempnum;
+	int len = 1, check, digit, sign = 0, i;
+	long int tempnum, num;
+	char *str;
 
 	/*Read the number*/
 	tempnum = va_arg(args, int);
@@ -16,18 +16,27 @@ int print_int(va_list args)
 	if (tempnum < 0)
 	{
 		_putchar('-');
-		num = (long int)(tempnum * -1);
+		tempnum = -tempnum;
 		sign = 1;
 	}
-	else
-		num = (long int)tempnum;
+	num = (long int) tempnum;
+
 	/*count the number length*/
 	len = _numlen(num);
-	check = _pow(10, len);
-	while (check /= 10)
+	str = malloc(sizeof(char) * (len + 1));
+
+	for (i = 0; i < len; i++)
 	{
-		digit = (num / check) % 10;
-		_putchar(digit + '0');
+		str[i] = num % 10 + '0';
+		num /= 10;
 	}
+	str[i] = '\0';
+	len = len - 1;
+	while (len > -1)
+	{
+		_putchar(str[len]);
+		len--;
+	}
+	free(str);
 	return (len + sign);
 }
