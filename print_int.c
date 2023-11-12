@@ -1,33 +1,41 @@
 #include "main.h"
 /**
- * print_int - print the digit the specifier %d or %i
- * @args: the argument passed
- * Return: number of digit printed
- */
-int print_int(va_list args)
+* print_int - print the digit the specifier %d or %i
+* @buffer_index: the buffer index
+* @buffer: the buffer
+* @args: the argument passed
+* Return: number of digit printed
+*/
+int print_int(va_list args, int *buffer_index, char buffer[])
 {
-	int len = 1, check, digit, sign = 0;
-	long int num;
+	int len = 1, digit, sign = 0;
+
+	long int num, check;
+
 	long int tempnum;
 
-	/*Read the number*/
+	/* Read the number */
 	tempnum = va_arg(args, int);
-	/*if number is neg print the symbol '-'*/
+	/* If the number is negative, print the symbol '-' */
 	if (tempnum < 0)
 	{
-		_putchar('-');
-		num = (long int)(tempnum * -1);
+		buffer_insert('-', buffer_index, buffer);
+		tempnum = -tempnum;
 		sign = 1;
 	}
-	else
-		num = (long int)tempnum;
-	/*count the number length*/
+
+	num = (long int)tempnum;
+
+	/* Count the number length */
 	len = _numlen(num);
 	check = _pow(10, len);
-	while (check /= 10)
+	check /= 10;
+	while (check > 0)
 	{
 		digit = (num / check) % 10;
-		_putchar(digit + '0');
+		buffer_insert(digit + '0', buffer_index, buffer);
+		check /= 10;
 	}
+
 	return (len + sign);
 }

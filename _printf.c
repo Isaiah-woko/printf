@@ -34,15 +34,18 @@ int _printf(const char *format, ...)
 
 int format_string(const char *format, va_list args)
 {
-	int i;
-	int numberofchar = 0;
+	int i, numberofchar = 0, buffer_index = 0;
+	char buffer[BUFFER_SIZE];
+
 
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 
 		if (format[i] != '%')
 		{
-			_putchar(format[i]);
+			/*_putchar(format[i]);*/
+			buffer_insert(format[i], &buffer_index, buffer);
+
 			numberofchar++;
 		}
 		else if (format[i] == '%')
@@ -56,14 +59,15 @@ int format_string(const char *format, va_list args)
 			}
 			else if (format[i] == '%')
 			{
-				numberofchar += handle_percent();
+				numberofchar += handle_percent(&buffer_index, buffer);
 			}
 			else
 			{
-				numberofchar += specifier_handler(format[i], format, &i, args);
+				numberofchar += specifier_handler(format[i], args, buffer, &buffer_index);
 			}
 		}
 	}
+	buffer_print(&buffer_index, buffer);
 
 	return (numberofchar);
 }

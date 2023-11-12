@@ -4,7 +4,7 @@ This repo would contain the codes for creating a custom printf function and it w
 ## Flowchart to Some Files
 <img src="https://github.com/Isaiah-woko/printf/blob/master/documentation_files/Untitled%20Diagram.drawio.png">
 
-## 📂 Files 
+## 📂 Files : _printf 
 |File|Description|
 |---|---|
 |_printf.c| the main function _printf|
@@ -15,9 +15,24 @@ This repo would contain the codes for creating a custom printf function and it w
 |print_str.c|prints a string '%s' |
 |print_percent|prints the percentage symbol '%' |
 |print_binary.c|print the integer number in binary '%b'|
-|0-main.c | main function to test 'd' , 'i' , 'c' and normal string in format variable|
-|main.c |The Alx main.c to test all specifier formats| 
+|print_pointer.c|print the value of a pointer '%p'|
+
+
+## 📂 Files : tests
+|File|Description|
+|---|---|
+|tests/0-main.c | test cases for task 0 .'%s','%c','%%'|
+|tests/1-main.c | test cases for task 1 .'%d', '%i'|
+|tests/2-main.c | test cases for task 2 .'%b'|
+|tests/3-main.c | test cases for task 3 .'%u', '%o', '%x', '%X'|
+|tests/4-main.c | test cases for task 4 . buffer[1024]|
+|tests/5-main.c | test cases for task 5 .'%S'|
+|tests/6-main.c | test cases for task 6 . '%p'|
+
+
 
 
 ## Run Commands
-     gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format tests/0-main.c *.c && ./a.out
+To check different test cases use the right test/{}-main.c file
+
+     $ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format tests/0-main.c *.c && ./a.out
