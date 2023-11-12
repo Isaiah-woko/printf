@@ -4,7 +4,7 @@
 
 /**
 * main - Entry point
-* Description: test 'd' , 'i' ,'c', 'c'
+* Description: test 'd' , 'i' 
 * Return: Always 0
 */
 int main(void)
@@ -77,15 +77,6 @@ int main(void)
 	/***/
 	_printf("%d == %i\n", 1024, 1024);
 	printf("%d == %i\n", 1024, 1024);
-	
-
-	 _printf("String:[%s]\n", "I am a string !");
-	 printf("String:[%s]\n", "I am a string !");
-
-	 printf("%%\n");
-	 _printf("%%\n");
-	 _printf("%\0\n");
-	 _printf("% \n");
 
 	return (0);
 }
