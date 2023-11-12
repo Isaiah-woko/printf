@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #define BUFFER_SIZE 1024
-extern char buffer[BUFFER_SIZE];
 
 /* main files */
 int _printf(const char *format, ...);

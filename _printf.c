@@ -35,6 +35,8 @@ int _printf(const char *format, ...)
 int format_string(const char *format, va_list args)
 {
 	int i, numberofchar = 0, buffer_index = 0;
+	char buffer[BUFFER_SIZE];
+
 
 	for (i = 0; format && format[i] != '\0'; i++)
 	{

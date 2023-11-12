@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include "../main.h"
 
-char buffer[BUFFER_SIZE];
 /**
  * main - Testing Task 0 : 'c' , 's' , '%'
  *
