@@ -10,12 +10,9 @@
 int main(void)
 {
 	int num = 10, len, len1;
-
 	int *ptr0 = &num;
-
 	int *arr;
-
-	char arr2[5]= "hello";
+	char arr2[5] = "hello";
 
 	arr = malloc(sizeof(int) * 8);
 	len = _printf("%p\n", &num);
@@ -36,6 +33,10 @@ int main(void)
 	len1 = _printf("7-%p\n", NULL);
 	printf("1-printed char : %d\n", len);
 	_printf("1 -printed char : %d\n", len1);
+	printf("8-%p\n", 1);
+	_printf("8-%p\n", 2);
+	printf("9-%p\n", '\0');
+	_printf("9-%p\n", '\0');
 
 	return (0);
 }
