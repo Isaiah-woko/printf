@@ -18,7 +18,7 @@ int print_pointer(va_list args, int *buffer_index, char buffer[])
 	count += 2;
 	for (i = sizeof(void *) * 2 - 5; i >= 0 ; i--)
 	{
-		hexdigit = ((unsigned long int) p >> (i * 4)) & 0xF;
+		hexdigit = ((unsigned long long) p >> (i * 4)) & 0xF;
 		if (hexdigit < 10)
 			buffer_insert(hexdigit + '0', buffer_index, buffer);
 		/*digit = 11 , hex = b , ascii(a) + 1 (digit - 10)*/
