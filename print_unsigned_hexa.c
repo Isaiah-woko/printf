@@ -17,6 +17,11 @@ int print_unsigned_hexa(va_list args, int *buffer_index, char buffer[])
 
 	hexa = va_arg(args, unsigned int);
 
+	if (hexa == 0)
+	{
+		buffer_insert('0', buffer_index, buffer);
+	}
+
 	while (hexa != 0)
 	{
 		rem = hexa % 16;
@@ -35,7 +40,7 @@ int print_unsigned_hexa(va_list args, int *buffer_index, char buffer[])
 
 	for (j = i - 1; j >= 0; j--)
 	{
-		buffer_insert('0' + hexaNum[j], buffer_index, buffer);
+		buffer_insert(hexaNum[j], buffer_index, buffer);
 		count++;
 	}
 

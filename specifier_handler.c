@@ -37,6 +37,9 @@ int specifier_handler(char specifier, va_list args, char buffer[],
 		case 'p':
 			count = print_pointer(args, buffer_index, buffer);
 			return (count);
+		case 'x':
+			count = print_unsigned_hexa(args, buffer_index, buffer);
+			return (count);
 		default:
 			buffer_insert('%', buffer_index, buffer);
 			buffer_insert(specifier, buffer_index, buffer);
