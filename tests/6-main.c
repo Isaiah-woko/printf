@@ -32,5 +32,10 @@ int main(void)
 	printf("5-%p\n", arr);
 	_printf("6 -%p\n", &arr);
 	printf("6-%p\n", &arr);
+	len = printf("7-%p\n", NULL);
+	len1 = _printf("7-%p\n", NULL);
+	printf("1-printed char : %d\n", len);
+	_printf("1 -printed char : %d\n", len1);
+
 	return (0);
 }
