@@ -10,7 +10,7 @@
 
 int print_unsigned_octal(va_list args, int *buffer_index, char buffer[])
 {
-	int i, j;
+	int i = 0, j;
 	unsigned int octal;
 	int octalNumber[100];
 
