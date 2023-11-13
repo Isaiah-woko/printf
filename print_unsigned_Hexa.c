@@ -37,7 +37,7 @@ int print_unsigned_Hexa(va_list args, int *buffer_index, char buffer[])
 		i++;
 	}
 
-	for (j = i - 1; j >=0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		buffer_insert(HexaNum[j], buffer_index, buffer);
 		count++;

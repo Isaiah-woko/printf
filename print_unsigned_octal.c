@@ -16,7 +16,7 @@ int print_unsigned_octal(va_list args, int *buffer_index, char buffer[])
 	int count = 0;
 
 	octal = va_arg(args, unsigned int);
-	
+
 	if (octal == 0)
 	{
 		buffer_insert('0', buffer_index, buffer);
