@@ -23,7 +23,7 @@ int print_pointer(va_list args, int *buffer_index, char buffer[])
 
 	ptr_as_int = (uintptr_t)p;
 
-	for (i = sizeof(void *) * 2 - 1; i >= 0; i--)
+	for (i = sizeof(void *) * 2 - 5; i >= 0; i--)
 	{
 		hexdigit = (ptr_as_int >> (i * 4)) & 0xF;
 		if (hexdigit < 10)
