@@ -24,6 +24,8 @@ int print_binary(va_list args, int *buffer_index, char buffer[]);
 int print_pointer(va_list args, int *buffer_index, char buffer[]);
 int print_unsigned_int(va_list args, int *buffer_index, char buffer[]);
 int print_unsigned_octal(va_list args, int *buffer_index, char bufffer[]);
+int print_unsigned_hexa(va_list args, int *buffer_index, char buffer[]);
+int print_unsigned_Hexa(va_list args, int *buffer_index, char buffer[]);
 
 
 /*Helping Function*/
