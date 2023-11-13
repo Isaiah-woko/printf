@@ -43,6 +43,9 @@ long int _pow(int num, int power)
 
 	return (result);
 }
+
+
+
 /**
 * buffer_insert - insert a character to the buffer if the buffer
 * is full print it by calling buffer_index();
