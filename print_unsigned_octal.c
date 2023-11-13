@@ -13,9 +13,10 @@ int print_unsigned_octal(va_list args, int *buffer_index, char buffer[])
 	int i = 0, j;
 	unsigned int octal;
 	int octalNumber[100];
+	int count = 0;
 
 	octal = va_arg(args, unsigned int);
-	
+
 	if (octal == 0)
 	{
 		buffer_insert('0', buffer_index, buffer);
@@ -33,7 +34,8 @@ int print_unsigned_octal(va_list args, int *buffer_index, char buffer[])
 	for (j = i - 1; j >= 0; j--)
 	{
 		buffer_insert('0' + octalNumber[j], buffer_index, buffer);
+		count++;
 	}
 
-	return (i);
+	return (count);
 }
