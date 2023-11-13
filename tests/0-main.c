@@ -13,8 +13,9 @@ int main(void)
 	_printf("%\0\n");
 	printf("% \n");
 	_printf("% \n");
-	_printf("String:[%s]\n", "I am a string !");
 	printf("String:[%s]\n", "I am a string !");
-
-    return (0);
+	_printf("String:[%s]\n", "I am a string !");
+	printf("complete the senence :you %s nothing, Jon Snow.\n", "Know");
+	_printf("complete the senence :you %s nothing, Jon Snow.\n", "Know");
+	return (0);
 }
