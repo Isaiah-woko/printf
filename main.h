@@ -27,7 +27,6 @@ int print_unsigned_int(va_list args, int *buffer_index, char buffer[]);
 int print_unsigned_octal(va_list args, int *buffer_index, char bufffer[]);
 int print_unsigned_hexa(va_list args, int *buffer_index, char buffer[]);
 int print_unsigned_Hexa(va_list args, int *buffer_index, char buffer[]);
-int print_rot13(va_list args, int *buffer_index, char buffer[]);
 
 /*structure for printing*/
 
@@ -43,8 +42,11 @@ typedef struct print
 	int (*printFunc)(va_list args, int *buffer_index, char buffer);
 } specifierFunc;
 
+specifierFunc *initSpecifierFuncs(void);
+
 /*custom specifiers*/
 int print_revStr(va_list args, int *buffer_index, char buffer[]);
+int print_rot13(va_list args, int *buffer_index, char buffer[]);
 int _strlen(char *str);
 
 
