@@ -43,7 +43,7 @@ char *rot13(const char *str)
 		/*search the character in alph0*/
 		i = 0;
 		checker = 1;
-		while (i < 52)
+		while (alph0[i])
 		{
 			/* check the char capital or small */
 			if (str[j] == alph0[i])
@@ -99,6 +99,7 @@ int print_rot13(va_list args, int *buffer_index, char buffer[])
 			buffer_insert(nptr[i], buffer_index, buffer);
 			count++;
 		}
+		free(nptr);
 	}
 	return (count);
 }
