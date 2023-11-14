@@ -30,7 +30,7 @@ This repo would contain the codes for creating a custom printf function and it w
 |tests/4-main.c | test cases for task 4 . buffer[1024]|
 |tests/5-main.c | test cases for task 5 .'%S'|
 |tests/6-main.c | test cases for task 6 . '%p'|
-
+|tests/13-main.c | test cases for task 13 . '%r'|
 
 
 
