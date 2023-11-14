@@ -21,8 +21,9 @@ specifierFunc *initSpecifierFunc(void)
 		{'x', print_unsigned_hexa},
 		{'X', print_unsigned_Hexa},
 		{'r', print_revStr},
-		{'R', print_rot13}
-		};
+		{'R', print_rot13},
+		{'S', print_bigstr}
+	};
 
 	return (specifierFuncs);
 }
