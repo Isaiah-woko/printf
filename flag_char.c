@@ -12,4 +12,8 @@
  *
  */
 
-int f
+int flag_check(void)
+{
+	if (check > 0)
+
+}
