@@ -11,17 +11,23 @@
 
 int print_unsigned_int(va_list args, int *buffer_index, char buffer[])
 {
-	int len = 1, digits, i;
+	int len = 1, digits, i, tempnum;
 	unsigned int highest, num;
 
-	num = va_arg(args, unsigned int);
+	tempnum = va_arg(args, unsigned int);
+
+	if (tempnum < 0)
+	{
+		tempnum = tempnum % 4294967295;
+	}
+		num = (unsigned int)tempnum;
 
 	if (num == 0)
 	{
 		buffer_insert('0', buffer_index, buffer);
 		return (1);
 	}
-	else if (num == UINT_MAX)
+	 if (num == UINT_MAX)
 	{
 		char Max[] = "4294967295";
 

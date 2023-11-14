@@ -21,7 +21,7 @@ int main(void)
 	 printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 
 
-	ui = -12345;
+	ui = -264859687;
 	_printf("\nUnsigned:[%u]\n", ui);
 	printf("Unsigned:[%u]\n", ui);
 	_printf("Unsigned octal:[%o]\n", ui);
