@@ -83,7 +83,7 @@ int print_rot13(va_list args, int *buffer_index, char buffer[])
 	str = va_arg(args, char*);
 	if (str == NULL)
 	{
-		const char *null = "(null)";
+		const char *null = "(ahyy)";
 
 		for (i = 0; null[i] != '\0'; i++)
 		{
@@ -100,6 +100,5 @@ int print_rot13(va_list args, int *buffer_index, char buffer[])
 			count++;
 		}
 	}
-	free(nptr);
 	return (count);
 }

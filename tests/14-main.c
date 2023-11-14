@@ -10,7 +10,9 @@
 int main(void)
 {
 	 _printf("String:[%R]\n", "I am a string !");
-     printf("String:[%R]\n", "I am a string !");
+     _printf("String:[%R]\n", NULL);
+	 _printf("String:[%R]\n", (char *)0);
+
 
 	 return (0);
 }
