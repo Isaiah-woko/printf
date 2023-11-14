@@ -20,7 +20,7 @@ int print_unsigned_octal(va_list args, int *buffer_index, char buffer[])
 	if (octal == 0)
 	{
 		buffer_insert('0', buffer_index, buffer);
-		return (1);
+		count++;
 	}
 	/*convert unsigned int to octal*/
 	while (octal > 0)
