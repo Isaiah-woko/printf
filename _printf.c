@@ -52,7 +52,7 @@ int format_string(const char *format, va_list args)
 		{
 			i++;
 
-			if (format[i] == '\0')
+			if (format[i] == ' ' || format[i] == '\0')
 			{
 				va_end(args);
 				return (-1);

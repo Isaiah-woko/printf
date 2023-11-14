@@ -20,9 +20,7 @@ specifierFunc *initSpecifierFunc(void)
 		{'p', print_pointer},
 		{'x', print_unsigned_hexa},
 		{'X', print_unsigned_Hexa},
-		{'r', print_revStr},
-		{'R', print_rot13},
-		{'S', print_bigstr}
+		{'r', print_revStr}
 	};
 
 	return (specifierFuncs);
