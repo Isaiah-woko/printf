@@ -1,10 +1,10 @@
 #include "main.h"
-/**
-* __strlen - return the length of giving string
-* @s: string to check
-* Return: the length of the giving string
-*/
 
+/**
+* __strlen - return the length of the given string
+* @s: string to check
+* Return: the length of the given string
+*/
 int __strlen(const char *s)
 {
 	int count = 0;
@@ -18,13 +18,12 @@ int __strlen(const char *s)
 }
 
 /**
-* *rot13 - shift char by 13 positon
+* rot13 - shift char by 13 positions
 * @str: string to shift
 * Return: pointer of the str
 */
 char *rot13(const char *str)
 {
-	/* remember the capital -32*/
 	char alph0[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	char alph13rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
@@ -36,16 +35,14 @@ char *rot13(const char *str)
 	ptr = malloc(__strlen(str) + 1);
 	if (ptr == NULL)
 		return (NULL);
-	/* loop each string */
+
 	j = 0;
 	while (str[j])
 	{
-		/*search the character in alph0*/
 		i = 0;
 		checker = 1;
 		while (alph0[i])
 		{
-			/* check the char capital or small */
 			if (str[j] == alph0[i])
 			{
 				ptr[j] = alph13rot[i];
@@ -57,12 +54,10 @@ char *rot13(const char *str)
 		if (checker)
 			ptr[j] = str[j];
 		j++;
-
 	}
+	ptr[j] = '\0'; /* Null-terminate the string */
 	return (ptr);
-
 }
-
 
 /**
 * print_rot13 - print a string roted 13 times %R
@@ -71,7 +66,6 @@ char *rot13(const char *str)
 * @buffer: the buffer
 * Return: number of character in string printed
 */
-
 int print_rot13(va_list args, int *buffer_index, char buffer[])
 {
 	int count = 0;
@@ -83,7 +77,7 @@ int print_rot13(va_list args, int *buffer_index, char buffer[])
 	str = va_arg(args, char*);
 	if (str == NULL)
 	{
-		const char *null = "(AHYY)";
+		const char *null = "(NULL)";
 
 		for (i = 0; null[i] != '\0'; i++)
 		{
