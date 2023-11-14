@@ -19,6 +19,7 @@ This repo would contain the codes for creating a custom printf function and it w
 |print_unsigned_int.c|prints an unsigned integer '%u' |
 |print_unsigned_octal.c|prints an unsigned octal '%o' |
 |print_bigstr.c|print the value of a String '%S'|
+|print_revStr.c|prints a string in reverse '%r' |
 
 ## 📂 Files : tests
 |File|Description|
