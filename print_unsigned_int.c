@@ -1,5 +1,7 @@
 #include "main.h"
 
+unsigned long int _power(int num, int power);
+
 /**
  * print_unsigned_int - prints the digits of an unsigned int
  * using the specifier %u
