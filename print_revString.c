@@ -2,7 +2,7 @@
 
 
 /**
- * print_revStrings - a custom format spcifier to print string in reverse
+ * print_revStr - a custom format spcifier to print string in reverse
  * @args: variable number of arguments
  * @buffer_index: the buffer index
  * @buffer: the buffer

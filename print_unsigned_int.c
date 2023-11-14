@@ -1,7 +1,5 @@
 #include "main.h"
 
-unsigned long int _power(int num, int power);
-
 /**
  * print_unsigned_int - prints the digits of an unsigned int
  * using the specifier %u
@@ -29,7 +27,7 @@ int print_unsigned_int(va_list args, int *buffer_index, char buffer[])
 		buffer_insert('0', buffer_index, buffer);
 		return (1);
 	}
-	 if (num == UINT_MAX)
+	else if (num == UINT_MAX)
 	{
 		char Max[] = "4294967295";
 
