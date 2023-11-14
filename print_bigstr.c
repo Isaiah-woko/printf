@@ -26,7 +26,7 @@ int print_bigstr(va_list args, int *buffer_index, char buffer[])
 	{
 		for (i = 0; str[i] != '\0'; i++)
 		{
-			if ((str[i] > 0 && str[i] < 32) || str[i] >= 127)
+			if ((str[i] < 32) || str[i] >= 127)
 			{
 				buffer_insert('\\', buffer_index, buffer);
 				buffer_insert('x', buffer_index, buffer);
@@ -40,7 +40,7 @@ int print_bigstr(va_list args, int *buffer_index, char buffer[])
 				secondDigitChar = (secondDigit < 10) ? ('0' + secondDigit) :
 							('A' + secondDigit - 10);
 				buffer_insert(secondDigitChar, buffer_index, buffer);
-				count += 4;
+				count += 3;
 			}
 			else
 			{
