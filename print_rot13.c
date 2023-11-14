@@ -45,6 +45,7 @@ int print_rot13(va_list args, int *buffer_index, char buffer[])
 			if (checker)
 				buffer_insert(str[j], buffer_index, buffer);
 			j++;
+			count++;
 		}
 	}
 	return (count);
