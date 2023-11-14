@@ -11,8 +11,7 @@
  *
  *
  */
-
-int flag_check(void)
+const char *handle_flags(const car *format)
 {
 	if (check > 0)
 
