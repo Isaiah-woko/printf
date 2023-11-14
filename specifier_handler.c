@@ -49,6 +49,9 @@ int specifier_handler(char specifier, va_list args, char buffer[],
 		case 'r':
 			count = print_revStr(args, buffer_index, buffer);
 			return (count);
+		case 'R':
+			count = print_rot13(args, buffer_index, buffer);
+			return (count);
 		default:
 			buffer_insert('%', buffer_index, buffer);
 			buffer_insert(specifier, buffer_index, buffer);
