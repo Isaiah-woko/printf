@@ -20,6 +20,7 @@ int print_unsigned_hexa(va_list args, int *buffer_index, char buffer[])
 	if (hexa == 0)
 	{
 		buffer_insert('0', buffer_index, buffer);
+		count++;
 	}
 
 	while (hexa != 0)
