@@ -1,6 +1,10 @@
 #include "main.h"
 /**
-* print_bigstr - print a character the specifier %c
+* print_bigstr - print a string with ascii value of the
+* Non printable characters (0 < ASCII value < 32 or >= 127)
+* are printed this way: \x,
+* followed by the ASCII code value in hexadecimal
+* (upper case - always 2 characters)
 * @args: the argument passed
 * @buffer_index: the buffer index
 * @buffer: the buffer
