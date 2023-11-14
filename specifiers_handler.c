@@ -16,7 +16,6 @@ specifierFunc *initSpecifierFunc(void)
 		{'s', print_str},
 		{'b', print_binary},
 		{'u', print_unsigned_int},
-		{'o', print_unsigned_octal},
 		{'p', print_pointer},
 		{'x', print_unsigned_hexa},
 		{'X', print_unsigned_Hexa},

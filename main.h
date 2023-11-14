@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <limits.h>
 #define BUFFER_SIZE 1024
-#define NUM_SPECIFIERS 11;
+#define NUM_SPECIFIERS 10;
 /* main files */
 int _printf(const char *format, ...);
 
