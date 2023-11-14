@@ -83,7 +83,7 @@ int print_rot13(va_list args, int *buffer_index, char buffer[])
 	str = va_arg(args, char*);
 	if (str == NULL)
 	{
-		const char *null = "(ahyy)";
+		const char *null = "(null)";
 
 		for (i = 0; null[i] != '\0'; i++)
 		{
