@@ -10,8 +10,8 @@ int main(void)
 	int len0, len1;
     printf("%%\n");
 	_printf("%%\n");
-	printf("%\0\n");*/
-	_printf("%\0\n");*/
+	printf("%\0\n");
+	_printf("%\0\n");
 	printf("% \n");
 	_printf("% \n");
 	printf("String:[%s]\n", "I am a string !");

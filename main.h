@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <limits.h>
 #define BUFFER_SIZE 1024
-#define NUM_SPECIFIERS 13;
+#define NUM_SPECIFIERS 13
 /* main files */
 int _printf(const char *format, ...);
 
@@ -43,9 +43,10 @@ int print_unsigned_Hexa(va_list args, int *buffer_index, char buffer[]);
 /*structure for printing*/
 
 /**
-* struct printer - a structure for printing
-* @specifiers: for the specifers
-* @printFunction: a function pointer to the specifiers
+* struct print - a structure for printing
+* @specifier: for the specifers
+* @specifier: the specifier
+* @printFunc: a function pointer to the specifiers
 */
 
 typedef struct print
