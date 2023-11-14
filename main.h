@@ -28,6 +28,24 @@ int print_unsigned_octal(va_list args, int *buffer_index, char bufffer[]);
 int print_unsigned_hexa(va_list args, int *buffer_index, char buffer[]);
 int print_unsigned_Hexa(va_list args, int *buffer_index, char buffer[]);
 
+/*structure for printing*/
+
+/**
+ * struct printer - a structure for printing
+ * @specifiers: for the specifers
+ * @printFunction: a function pointer to the specifiers
+ */
+
+typedef struct print
+{
+	char specifier;
+	int (*printFunc)(va_list args, int *buffer_index, char buffer);
+} specifierFunc;
+
+/*custom specifiers*/
+int print_revStr(va_list args, int *buffer_index, char buffer[]);
+int _strlen(char *str);
+
 
 /*Helping Function*/
 void _putchar(char c);
