@@ -77,5 +77,6 @@ long int _pow(int num, int power);
 void buffer_insert(char character, int *buffer_index, char buffer[]);
 
 void buffer_print(int *buffer_index, char buffer[]);
-
+int _numlen_1(unsigned long int num);
+unsigned long int _pow_1(unsigned long int num, int power);
 #endif
