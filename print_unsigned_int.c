@@ -1,50 +1,39 @@
 #include "main.h"
 
 /**
- * print_unsigned_int - prints the digits of an unsigned int
- * using the specifier %u
- * @args: the variable number of argumets
- * @buffer: the buffer
- * @buffer_index: the buffer index
- * Return: the number of digits printed
- */
+* print_unsigned_int - prints the digits of an unsigned int
+* using the specifier %u
+* @args: the variable number of argumets
+* @buffer: the buffer
+* @buffer_index: the buffer index
+* Return: the number of digits printed
+*/
 
 int print_unsigned_int(va_list args, int *buffer_index, char buffer[])
 {
-	int len = 1, digits, i, tempnum;
-	unsigned int highest, num;
+	int len = 1, digits;
 
-	tempnum = va_arg(args, unsigned int);
+	unsigned long int highest, num, res;
 
-	if (tempnum < 0)
-	{
-		tempnum = tempnum % 4294967295;
-	}
-		num = (unsigned int)tempnum;
+	num = va_arg(args, unsigned long int);
 
 	if (num == 0)
 	{
 		buffer_insert('0', buffer_index, buffer);
 		return (1);
 	}
-	else if (num == UINT_MAX)
+	if (num > ULONG_MAX)
 	{
-		char Max[] = "4294967295";
-
-		for (i = 0; i < 10; i++)
-		{
-			buffer_insert(Max[i], buffer_index, buffer);
-		}
-		return (10);
+		num = ULONG_MAX - (ULONG_MAX - num) + 1;
 	}
 
 	/*count length of number*/
-	len = _numlen(num);
-
-	highest = _pow(10, len - 1);
+	len = _numlen_1(num);
+	highest = _pow_1(10, len - 1);
 	while (highest > 0)
 	{
-		digits = (num / highest) % 10;
+		res = (num / highest);
+		digits = res % 10;
 		buffer_insert(digits + '0', buffer_index, buffer);
 		highest /= 10;
 	}

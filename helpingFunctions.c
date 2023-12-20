@@ -35,6 +35,8 @@ long int _pow(int num, int power)
 {
 	long int result = 1;
 
+	if (power < 0)
+		return (0);
 	while (power > 0)
 	{
 		result *= num;
